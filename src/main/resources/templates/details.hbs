@@ -1,0 +1,13 @@
+{{#partial "content"}}
+    <h1>{{idea.title}}</h1>
+    <ul>
+        <p>votes: {{idea.voteCount}} </p>
+        {{#each idea.voters}}
+           <li> {{this}}</li>
+        {{/each}}
+    </ul>
+
+    <a href="/ideas">Back to ideas</a>
+{{/partial}}
+
+{{> base.hbs}}
